@@ -1,13 +1,12 @@
-# controller
-Rails Router for mock CRUD OPs &amp; page-management 
+<h1 align="center">Dro0m</h1>
+
+> controller-aspect of Dro0m app. 
 
 
-# README
+## Deployment instructions
+1. run `rails server` in base `dir` 
+2. edit and watch live changes 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
 
 * Ruby version
 
@@ -22,7 +21,3 @@ Things you may want to cover:
 * How to run the test suite
 
 * Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
