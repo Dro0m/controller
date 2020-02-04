@@ -1,16 +1,26 @@
-/* eslint-disable no-console */
-const express = require("express");
-const { join } = require("path");
-const morgan = require("morgan");
+﻿require('rootpath')();
+const express = require('express');
 const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const jwt = require('_helpers/jwt');
+const errorHandler = require('_helpers/error-handler');
 
-const port = process.env.SERVER_PORT || 3000;
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(cors());
 
-app.use(morgan("dev"));
-app.use(express.static(join(__dirname, "build")));
+// use JWT auth to secure the api
+app.use(jwt());
 
-app.use((_, res) => {
-  res.sendFile(join(__dirname, "build", "index.html"));
+// api routes
+app.use('/users', require('./users/users.controller'));
+
+// global error handler
+app.use(errorHandler);
+
+// start server
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
+const server = app.listen(port, function () {
+    console.log('Server listening on port ' + port);
 });
-
-app.listen(port, () => console.log(`Listening on port ${port}`));
