@@ -1,5 +1,16 @@
-# node-mongo-registration-login-api
+<h1 align="center">Dro0m<h1>
 
-NodeJS + MongoDB API for User Management, Authentication and Registration
+> controller-aspect of the Dro0m app. 
 
-For documentation and instructions check out http://jasonwatmore.com/post/2018/06/14/nodejs-mongodb-simple-api-for-authentication-registration-and-user-management
+[![Build Status](https://travis-ci.org/Dro0m/controller.svg?branch=jeffrey-desir)](https://travis-ci.org/Dro0m/controller)
+
+## Development
+1. install `mongolb` 
+1. run `yarn start`
+
+
+## Authorship 
+
+
+## License
+This project is under the [MIT](LICENSE) ☔
