@@ -1,4 +1,4 @@
 ﻿{
-	"connectionString": "mongodb://localhost/8008",
-	"secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+	"connectionString": "mongodb://localhost/8000",
+	"secret": "I LIKE BIG BUTTS AND I CANNOT LIE"
 }

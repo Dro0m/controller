@@ -1,15 +1,16 @@
 {
 	"name": "dro0m-controller",
 	"version": "0.0.1",
-	"description": "server-side controller for user-database and interace to app-store",
+	"description": "dro0m-app controller and data store",
+	"author": "(jffry (dsr))",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/cornflourblue/node-mongo-registration-login-api.git"
+		"url": "https://github.com/dro0m/controller.git"
 	},
 	"scripts": {
-		"start": "node ./init.js",
-		"start-dev": "nodemon ./init.js"
+		"start": "nodemon ./server.js",
+		"dev": "nodemon ./server.js"
 	},
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
