@@ -2,16 +2,15 @@
  Author: (jffry (dsr))
  Date: 02-03-2020
  Version: 0.0.1
- Description: 
-
+ Description: inits all middleware functions and express settings
  */
 
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const jwt = require('_helpers/jwt');
-const errorHandler = require('_helpers/error-handler');
+const jwt = require('./jwt');
+const errorHandler = require('./error-handler');
 
 
 module.exports = (server) => {
