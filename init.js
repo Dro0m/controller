@@ -1,26 +1,14 @@
-require('rootpath')();
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const jwt = require('_helpers/jwt');
-const errorHandler = require('_helpers/error-handler');
+/* 
+ Author: (jffry (dsr))
+ Date: 02-03-2020
+ Version: 0.0.1
+ Descrition: controller entry point
+ */
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(cors());
+const controller = require('./router/index');
 
-// use JWT auth to secure the api
-app.use(jwt());
-
-// api routes
-app.use('/users', require('./users/users.controller'));
-
-// global error handler
-app.use(errorHandler);
-
-// start server
 const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
-const server = app.listen(port, function () {
-    console.log('Server listening on port ' + port);
+
+controller.listen(port, _ => {
+    console.log('Droom controller active on port ' + port);
 });

@@ -1,6 +1,13 @@
-﻿const express = require('express');
+/* 
+ Author: (jffry (dsr))
+ Date: 02-03-2020
+ Version: 0.0.1
+ Description: 
+ */
+
+const express = require('express');
 const router = express.Router();
-const userService = require('../user.service');
+const userService = require('../../utils/user.service');
 
 // routes
 router.post('/authenticate', authenticate);

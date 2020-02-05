@@ -1,7 +1,7 @@
 {
-	"name": "dro0m-controller-router",
-	"version": "1.0.0",
-	"description": "NodeJS + MongoDB API for User Management, Authentication and Registration",
+	"name": "dro0m-controller",
+	"version": "0.0.1",
+	"description": "server-side controller for user-database and interace to app-store",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

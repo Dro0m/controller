@@ -1,3 +1,10 @@
+/* 
+ Author: (jffry (dsr))
+ Date: 02-03-2020
+ Version: 0.0.1
+ Description: 
+*/
+
 module.exports = errorHandler;
 
 function errorHandler(err, req, res, next) {
