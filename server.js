@@ -5,6 +5,8 @@
  Description: controller entry point 
  */
 
+ //DO NOT TOUCH 😈
+ 
 require('rootpath')();
 const express = require('express');
 const app = express();
@@ -16,5 +18,5 @@ initMiddleware(app);
 const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
 
 app.listen(port, _ => {
-    console.log('Server listening on port ' + port);
+    console.log('!app-controller active on port ' + port);
 });
