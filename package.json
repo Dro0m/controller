@@ -9,8 +9,8 @@
 		"url": "https://github.com/dro0m/controller.git"
 	},
 	"scripts": {
-		"start": "nodemon ./server.js",
-		"dev": "nodemon ./server.js"
+		"start": "nodemon ./main.js",
+		"dev": "nodemon ./main.js"
 	},
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
